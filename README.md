@@ -70,7 +70,8 @@ pipenv install <dependency-name>
 
 ### Build for production
 
-Run:
+First, make sure your terminal is running on your host (outside the dev container).  
+Then, run:
 
 ```bash
 docker-compose build
@@ -82,12 +83,13 @@ If you want to use settings from a `.env` file, uncomment the relevant line in `
 
 ### How to run a production version of the code
 
-Run:
+First, make sure your terminal is running on your host (outside the dev container).  
+Then, run:
 
 ```bash
 docker-compose up
 
-#Or, if you want to run it in the background:
+# Or, if you want to run it in the background:
 docker-compose up -d
 ```
 
