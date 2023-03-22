@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  server:
+    image: python-project-template
+    build:
+      context: .
+      target: prod
+    # restart: always
+    volumes:
+      - ${PWD}/logs:/app/logs
+      - "/etc/timezone:/etc/timezone:ro" # So the clock inside the container is the same as the host's
+      - "/etc/localtime:/etc/localtime:ro" # So the clock inside the container is the same as the host's
+    # env_file: .env
