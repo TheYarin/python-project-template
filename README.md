@@ -54,7 +54,7 @@ python src/main.py
 
 You can use the "Python: src/main.py" debug config that is defined in `.vscode/launch.json`.
 
-### Adding new dependencies
+### Adding new python dependencies
 
 Dev dependencies:
 
