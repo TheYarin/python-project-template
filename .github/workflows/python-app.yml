@@ -16,8 +16,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Build the dev container
-      uses: devcontainers/ci@v0.3
     - name: Test with pytest
-      run: |
-        pipenv run pytest
+      uses: devcontainers/ci@v0.3
+      with:
+        runCmd: pipenv run pytest
